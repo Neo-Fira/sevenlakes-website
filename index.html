@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0ea5a4" />
+    <meta name="theme-color" content="#0a1f2f" />
 
-    <title>Seven Lakes Tajikistan | Туры на 7 озёр Haft Kul и в Fann Mountains</title>
+    <title>Туры из Самарканда на 7 озёр Таджикистана | Seven Lakes (Haft Kul)</title>
     <meta
       name="description"
-      content="Откройте для себя Seven Lakes (Haft Kul) в Таджикистане. Авторские туры из Самарканда на Семь озёр, путешествия по Fann Mountains и полезный travel guide."
+      content="Частные туры из Самарканда на Seven Lakes (Хафт Кул): трансфер, помощь на границе, реальные фото маршрута, гибкий темп и бронирование через WhatsApp или Telegram."
     />
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 
@@ -20,38 +20,52 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Seven Lakes Tajikistan" />
     <meta property="og:locale" content="ru_RU" />
-    <meta property="og:title" content="Seven Lakes Tajikistan | Туры на Haft Kul" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:title" content="Туры из Самарканда на 7 озёр Таджикистана за 1 день" />
     <meta
       property="og:description"
-      content="Авторские туры из Самарканда: Seven Lakes (Haft Kul), Искандеркуль и Fann Mountains. Бронируйте и путешествуйте."
+      content="Seven Lakes (Haft Kul), Фанские горы и помощь на границе. Частный маршрут из Самарканда с гибким темпом и стартом от 240 USD за машину."
     />
     <meta property="og:url" content="https://sevenlakes.tj/" />
     <meta property="og:image" content="https://sevenlakes.tj/assets/og-cover.jpg" />
-    
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Частный тур на Seven Lakes из Самарканда" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Seven Lakes Tajikistan: частные туры из Самарканда" />
+    <meta
+      name="twitter:description"
+      content="Премиальный day-trip на 7 озёр Таджикистана: маршрут, реальные фото, поддержка на границе и удобное бронирование."
+    />
+    <meta name="twitter:image" content="https://sevenlakes.tj/assets/og-cover.jpg" />
+    <meta name="twitter:image:alt" content="Частный тур на Seven Lakes из Самарканда" />
+
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
-    <!-- Plus Jakarta Sans for premium startup feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
     />
 
-    <link rel="preload" href="styles.css?v=20260311-v2" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="styles.css?v=20260311-v2" /></noscript>
+    <link
+      rel="preload"
+      as="image"
+      href="assets/hero-640.jpg"
+      imagesrcset="assets/hero-640.jpg 640w, assets/hero-1024.jpg 1024w, assets/hero.jpg 1400w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <link rel="preload" href="styles.css?v=20260311-v3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles.css?v=20260311-v3" /></noscript>
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://sevenlakes.tj/#website",
-            "url": "https://sevenlakes.tj/",
-            "name": "Seven Lakes Tajikistan",
-            "description": "Travel guide and tours to Seven Lakes, Haft Kul and Fann Mountains."
-          },
           {
             "@type": "TravelAgency",
             "@id": "https://sevenlakes.tj/#org",
@@ -59,479 +73,981 @@
             "url": "https://sevenlakes.tj/",
             "logo": "https://sevenlakes.tj/assets/favicon.svg",
             "telephone": "+992552225544",
-            "sameAs": ["https://t.me/sevenlakes7", "https://wa.me/992552225544"]
+            "email": "firdavs.jalolov@yandex.ru",
+            "sameAs": ["https://t.me/sevenlakes7", "https://wa.me/992552225544"],
+            "availableLanguage": ["ru", "en"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://sevenlakes.tj/#website",
+            "url": "https://sevenlakes.tj/",
+            "name": "Seven Lakes Tajikistan",
+            "publisher": { "@id": "https://sevenlakes.tj/#org" },
+            "inLanguage": ["ru", "en"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://sevenlakes.tj/#webpage",
+            "url": "https://sevenlakes.tj/",
+            "name": "Туры из Самарканда на 7 озёр Таджикистана",
+            "description": "Частные туры из Самарканда на Seven Lakes (Хафт Кул) с помощью на границе, реальными фото маршрута и бронированием через мессенджеры.",
+            "isPartOf": { "@id": "https://sevenlakes.tj/#website" },
+            "inLanguage": "ru",
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://sevenlakes.tj/assets/hero.jpg",
+              "width": 1400,
+              "height": 1050
+            },
+            "mainEntity": { "@id": "https://sevenlakes.tj/#tour-list" },
+            "potentialAction": { "@id": "https://sevenlakes.tj/#travel-action" }
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://sevenlakes.tj/#tour-list",
+            "name": "Частные туры из Самарканда",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Тур на 7 озёр Таджикистана из Самарканда",
+                "url": "https://sevenlakes.tj/tours/seven-lakes-from-samarkand/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Искандеркуль из Самарканда",
+                "url": "https://sevenlakes.tj/tours/iskanderkul-from-samarkand/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Джип-тур по Фанским горам",
+                "url": "https://sevenlakes.tj/tours/fann-mountains-jeep-tour/"
+              }
+            ]
+          },
+          {
+            "@type": "TravelAction",
+            "@id": "https://sevenlakes.tj/#travel-action",
+            "agent": { "@id": "https://sevenlakes.tj/#org" },
+            "fromLocation": { "@type": "Place", "name": "Самарканд, Узбекистан" },
+            "toLocation": { "@type": "Place", "name": "Seven Lakes (Haft Kul), Таджикистан" },
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://wa.me/992552225544",
+              "inLanguage": "ru",
+              "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/MobileWebPlatform"]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://sevenlakes.tj/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Подходит ли маршрут для семьи или небольшой группы?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да. Это частный формат, поэтому темп, остановки и длительность пауз адаптируются под ваш состав группы."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Цена 240 USD указана за машину или за человека?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Стартовая цена указана за машину. Финальная стоимость зависит от маршрута и размера группы."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Помогаете ли вы на границе Самарканд — Пенджикент?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да. Перед выездом мы отправляем понятную инструкцию и сопровождаем вас по логике перехода."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Когда лучше ехать на Seven Lakes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Самые яркие месяцы для поездки на Seven Lakes обычно приходятся на период с мая по начало октября."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
   </head>
 
-  <body data-locale="ru" data-whatsapp="992552225544" data-telegram="sevenlakes7">
+  <body class="landing-home" data-locale="ru" data-whatsapp="992552225544" data-telegram="sevenlakes7" data-ga4="G-L0G3GKRERE" data-ym="106996654">
+    <a class="skip-link" href="#content">Перейти к содержимому</a>
 
-    <header class="app-header">
-      <div class="container app-header__inner">
-        <a class="brand" href="index.html" aria-label="Seven Lakes Tajikistan">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
-            <path d="M12 12v9"></path>
-            <path d="m8 17 4 4 4-4"></path>
-          </svg>
-          Seven Lakes
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Seven Lakes Tajikistan">
+          <span class="site-brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+              <path d="M12 12v9"></path>
+              <path d="m8 17 4 4 4-4"></path>
+            </svg>
+          </span>
+          <span>
+            <strong>Seven Lakes</strong>
+            <small>Private Tours from Samarkand</small>
+          </span>
         </a>
-        
-        <div style="display: flex; gap: 16px; align-items: center;">
-          <a href="en/index.html" hreflang="en" lang="en" style="color: #fff; font-weight: 600; font-size: 0.95rem;">EN</a>
-          <a class="btn btn--ghost" href="#booking">Забронировать</a>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="#destination">О направлении</a>
+          <a href="#lakes">7 озёр</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#itinerary">Маршрут</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#booking">Бронирование</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="site-lang" href="en/index.html" hreflang="en" lang="en">EN</a>
+          <a class="landing-btn landing-btn--soft" href="#booking" data-track="header_booking">Запросить тур</a>
         </div>
       </div>
     </header>
 
     <main id="content">
+      <section class="landing-hero" id="top">
+        <div class="container landing-hero__grid">
+          <div class="landing-hero__copy">
+            <p class="landing-eyebrow">Частные туры из Самарканда • Seven Lakes (Haft Kul)</p>
+            <h1 class="hero-title">Семь озёр Таджикистана за один день</h1>
+            <p class="landing-lead">
+              Премиальный маршрут для тех, кто хочет увидеть одну из самых красивых долин
+              Центральной Азии без лишней суеты: забор из отеля, помощь на границе,
+              комфортный трансфер и гибкий темп по всей долине Шинг.
+            </p>
 
-      <!-- 1. HERO SECTION -->
-      <section class="hero">
-        <img class="hero__bg" src="assets/hero.jpg" alt="Seven Lakes Haft Kul Fann Mountains" />
-        <div class="hero__overlay"></div>
-        <div class="container hero__content fade-up">
-          <h1>Seven Lakes Tajikistan (Haft Kul)</h1>
-          <p class="lead">
-            Откройте для себя одну из самых красивых горных долин Центральной Азии. Невероятный градиент красок в сердце Fann Mountains.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#booking">Book a Tour</a>
-            <a class="btn btn--ghost" href="#lakes">Explore the Lakes</a>
+            <div class="landing-hero__actions">
+              <a class="landing-btn landing-btn--primary" href="#booking" data-track="hero_booking">Получить точную цену</a>
+              <a class="landing-btn landing-btn--light" href="#gallery" data-track="hero_gallery">Смотреть реальные фото</a>
+            </div>
+
+            <div class="landing-trustline" aria-label="Ключевые преимущества">
+              <span>от 240 USD / машина</span>
+              <span>частный формат</span>
+              <span>поддержка на границе</span>
+              <span>ответ в мессенджере 5–10 минут</span>
+            </div>
+
+            <div class="landing-metrics" aria-label="Ключевые факты">
+              <article class="metric-card">
+                <span class="metric-card__label">Старт</span>
+                <strong>Самарканд</strong>
+                <p>Забираем из отеля или заранее согласованной точки.</p>
+              </article>
+              <article class="metric-card">
+                <span class="metric-card__label">Маршрут</span>
+                <strong>Seven Lakes / Haft Kul</strong>
+                <p>7 озёр, Фанские горы, панорамные остановки и реальная логистика.</p>
+              </article>
+              <article class="metric-card">
+                <span class="metric-card__label">Формат</span>
+                <strong>Private day trip</strong>
+                <p>Индивидуальный темп, семьи, пары и небольшие группы.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="landing-hero__media">
+            <figure class="hero-visual">
+              <picture>
+                <source srcset="assets/hero-640.jpg 640w, assets/hero-1024.jpg 1024w, assets/hero.jpg 1400w" sizes="(max-width: 900px) 100vw, 48vw" />
+                <img
+                  src="assets/hero.jpg"
+                  srcset="assets/hero-640.jpg 640w, assets/hero-1024.jpg 1024w, assets/hero.jpg 1400w"
+                  sizes="(max-width: 900px) 100vw, 48vw"
+                  width="1400"
+                  height="1050"
+                  alt="Seven Lakes (Haft Kul) в Фанских горах Таджикистана"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+              <figcaption>Seven Lakes (Haft Kul), долина Шинг, Фанские горы</figcaption>
+            </figure>
+
+            <aside class="hero-floating-card">
+              <p class="hero-floating-card__kicker">Быстрый запрос</p>
+              <h2>Самый популярный формат</h2>
+              <p>Однодневный тур на 7 озёр из Самарканда с возвратом в тот же день.</p>
+              <div class="hero-floating-card__meta">
+                <span>от 240 USD / машина</span>
+                <span>WhatsApp / Telegram</span>
+              </div>
+              <a class="landing-btn landing-btn--secondary landing-btn--full" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer" data-track="hero_whatsapp">Написать в WhatsApp</a>
+            </aside>
           </div>
         </div>
       </section>
 
-      <!-- 2. HIGHLIGHTS (OVERLAPPING HERO) -->
-      <section class="highlights">
-        <div class="container highlights-grid fade-up delay-200">
-          
-          <div class="highlight-card">
-            <div class="highlight-icon">
-              <!-- Mountain Icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-              </svg>
-            </div>
-            <div class="highlight-info">
-              <h3>Unique Landscapes</h3>
-              <p>7 озер на высотах от 1640 до 2360 метров с разным цветом воды.</p>
-            </div>
+      <section class="landing-section landing-section--compact" aria-labelledby="highlights-title">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <p class="section-kicker">Ключевые преимущества</p>
+            <h2 class="section-title" id="highlights-title">Маршрут, в котором всё уже продумано</h2>
           </div>
 
-          <div class="highlight-card delay-100">
-            <div class="highlight-icon">
-              <!-- Steering Wheel / Jeep Icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <circle cx="12" cy="12" r="3"></circle>
-                <line x1="12" y1="15" x2="12" y2="22"></line>
-                <line x1="14.6" y1="10.5" x2="20.65" y2="7"></line>
-                <line x1="9.4" y1="10.5" x2="3.35" y2="7"></line>
-              </svg>
-            </div>
-            <div class="highlight-info">
-              <h3>Comfortable 4x4</h3>
-              <p>Современные внедорожники и минивэны для поездок по горным серпантинам.</p>
-            </div>
-          </div>
-
-          <div class="highlight-card delay-200">
-            <div class="highlight-icon">
-              <!-- User Check Icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <polyline points="16 11 18 13 22 9"></polyline>
-              </svg>
-            </div>
-            <div class="highlight-info">
-              <h3>Private Tours</h3>
-              <p>Индивидуальные программы, личный гид и помощь на границе.</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- 3. THE 7 LAKES -->
-      <section class="section" id="lakes">
-        <div class="container fade-up">
-          <div class="section-header">
-            <h2>The 7 Lakes of Haft Kul</h2>
-            <p>Узнайте об уникальных характеристиках каждого из семи озер долины Шинг.</p>
-          </div>
-
-          <div class="lakes-grid">
-            
-            <a href="first-lake-seven-lakes/index.html" class="lake-card">
-              <div class="lake-card__image">
-                <span class="lake-card__tag">Озеро 1</span>
-                <img src="assets/lake-1.jpg" alt="Озеро Нежигон" loading="lazy" />
-              </div>
-              <div class="lake-card__content">
-                <h3>Нежигон (Nezhigon)</h3>
-                <p>Невероятно яркий бирюзовый цвет и эффектный каскад у плотины.</p>
-                <span class="lake-card__link">Learn more &rarr;</span>
-              </div>
-            </a>
-
-            <a href="second-lake-seven-lakes/index.html" class="lake-card delay-100">
-              <div class="lake-card__image">
-                <span class="lake-card__tag">Озеро 2</span>
-                <img src="assets/client-2-768.jpg" alt="Озеро Соя" loading="lazy" />
-              </div>
-              <div class="lake-card__content">
-                <h3>Соя (Soya)</h3>
-                <p>Озеро в тени высоких скал, цвет которого завораживает насыщенным изумрудом.</p>
-                <span class="lake-card__link">Learn more &rarr;</span>
-              </div>
-            </a>
-
-            <a href="third-lake-seven-lakes/index.html" class="lake-card delay-200">
-              <div class="lake-card__image">
-                <span class="lake-card__tag">Озеро 3</span>
-                <img src="assets/client-3-768.jpg" alt="Озеро Хушёр" loading="lazy" />
-              </div>
-              <div class="lake-card__content">
-                <h3>Хушёр (Gushor)</h3>
-                <p>Бурные воды и потрясающий живописный вид на горы.</p>
-                <span class="lake-card__link">Learn more &rarr;</span>
-              </div>
-            </a>
-
-            <a href="fourth-lake-seven-lakes/index.html" class="lake-card">
-              <div class="lake-card__image">
-                <span class="lake-card__tag">Озеро 4</span>
-                <img src="assets/lake-4.jpg" alt="Озеро Нофин" loading="lazy" />
-              </div>
-              <div class="lake-card__content">
-                <h3>Нофин (Nofin)</h3>
-                <p>Самое протяженное озеро с традиционными таджикскими деревнями на берегу.</p>
-                <span class="lake-card__link">Learn more &rarr;</span>
-              </div>
-            </a>
-
-            <a href="fifth-lake-seven-lakes/index.html" class="lake-card delay-100">
-              <div class="lake-card__image">
-                <span class="lake-card__tag">Озеро 5</span>
-                <img src="assets/client-5-768.jpg" alt="Озеро Хурдак" loading="lazy" />
-              </div>
-              <div class="lake-card__content">
-                <h3>Хурдак (Khurdak)</h3>
-                <p>Компактное, кристально чистое озеро на высоте 1870 метров над уровнем моря.</p>
-                <span class="lake-card__link">Learn more &rarr;</span>
-              </div>
-            </a>
-
-            <a href="sixth-lake-seven-lakes/index.html" class="lake-card delay-200">
-              <div class="lake-card__image">
-                <span class="lake-card__tag">Озеро 6</span>
-                <img src="assets/client-6-768.jpg" alt="Озеро Маргузор" loading="lazy" />
-              </div>
-              <div class="lake-card__content">
-                <h3>Маргузор (Marguzor)</h3>
-                <p>Огромное и величественное "Озеро Цветов", окруженное крутыми склонами.</p>
-                <span class="lake-card__link">Learn more &rarr;</span>
-              </div>
-            </a>
-
-            <a href="seventh-lake-seven-lakes/index.html" class="lake-card">
-              <div class="lake-card__image">
-                <span class="lake-card__tag">Озеро 7</span>
-                <img src="assets/client-9-768.jpg" alt="Озеро Хазорчашма" loading="lazy" />
-              </div>
-              <div class="lake-card__content">
-                <h3>Хазорчашма (Hazorchashma)</h3>
-                <p>Седьмое небо Хафт Кул (2360 м). Дикая природа и тишина.</p>
-                <span class="lake-card__link">Learn more &rarr;</span>
-              </div>
-            </a>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. TOURS SECTION -->
-      <section class="section" style="background-color: var(--color-surface);" id="tours">
-        <div class="container fade-up">
-          <div class="section-header">
-            <h2>Featured Tours</h2>
-            <p>Откройте Fann Mountains вместе с нашими профессиональными гидами.</p>
-          </div>
-
-          <div class="tours-grid">
-            
-            <div class="tour-card fade-up delay-100">
-              <div class="tour-card__image">
-                <img src="assets/hero-640.jpg" alt="Samarkand to Seven Lakes Tour" loading="lazy" />
-              </div>
-              <div class="tour-card__content">
-                <div class="tour-card__chips">
-                  <span class="tour-card__chip">Bestseller</span>
-                  <span class="tour-card__chip">1 Day Tour</span>
-                </div>
-                <h3>Samarkand to Seven Lakes Tour</h3>
-                <p>Самый удобный способ увидеть Таджикистан во время визита в Узбекистан. Включает трансфер из вашего отеля в Самарканде, помощь на пограничном переходе и возвращение в тот же день.</p>
-                <div class="tour-card__price">240 USD <span>/ per car (up to 4 pax)</span></div>
-                <div>
-                  <a href="samarkand-to-seven-lakes-tour/index.html" class="btn btn--primary">View Tour</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="tour-card fade-up delay-200">
-              <div class="tour-card__image">
-                <img src="assets/lake-4-1024.jpg" alt="Fann Mountains Jeep Tour" loading="lazy" />
-              </div>
-              <div class="tour-card__content">
-                <div class="tour-card__chips">
-                  <span class="tour-card__chip">Expedition</span>
-                  <span class="tour-card__chip">Multi-day</span>
-                </div>
-                <h3>Fann Mountains Jeep Tour</h3>
-                <p>Полноценное приключение в глубину Таджикистана на комфортных внедорожниках. Посещение озер Искандеркуль, Seven Lakes и живописных перевалов, доступных только для 4x4.</p>
-                <div class="tour-card__price">Custom <span>/ upon request</span></div>
-                <div>
-                  <a href="fann-mountains-tour/index.html" class="btn btn--primary">View Itinerary</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. TRAVEL GUIDE -->
-      <section class="section" id="guide">
-        <div class="container fade-up">
-          <div class="section-header">
-            <h2>Tajikistan Travel Guide</h2>
-            <p>Полезная информация для планирования поездки.</p>
-          </div>
-
-          <div class="cards-3">
-            <div class="minimal-card fade-up delay-100">
-              <div class="minimal-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
-              </div>
-              <h3>Best Time to Visit</h3>
-              <p>Озера открыты с мая по начало октября. Лето идеальное время насладиться яркой бирюзовой водой и теплым климатом.</p>
-              <a href="best-time-to-visit-seven-lakes/index.html" class="minimal-card__link">Read more &rarr;</a>
-            </div>
-
-            <div class="minimal-card fade-up delay-200">
-              <div class="minimal-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </div>
-              <h3>Border Crossing</h3>
-              <p>Переход "Джартепа/Саразм" (Самарканд - Пенджикент) открыт для туристов. Процесс на машине занимает 20-40 минут.</p>
-              <a href="blog/how-to-get-from-samarkand-to-seven-lakes/index.html" class="minimal-card__link">Read more &rarr;</a>
-            </div>
-
-            <div class="minimal-card fade-up delay-300">
-              <div class="minimal-card__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m5 16 3 3"/><path d="m14 7 3 3"/><path d="m19 12-5-5"/><path d="m10 21-5-5"/></svg>
-              </div>
-              <h3>What to Bring</h3>
-              <p>На Хазорчашме может быть прохладно даже жарким летом. Берите ветровку и удобную обувь (кроссовки/трекинг).</p>
-              <a href="seven-lakes-travel-guide/index.html" class="minimal-card__link">Read more &rarr;</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 6. MAP SECTION -->
-      <section class="section">
-        <div class="container fade-up">
-          <div class="map-card">
-            <div class="map-layout">
+          <div class="highlight-grid">
+            <article class="highlight-card">
+              <span class="highlight-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 3 4 11h16l-4-8-4 6-4-6Z"></path>
+                  <path d="M2 20h20"></path>
+                </svg>
+              </span>
               <div>
-                <h2 style="font-size: 2rem; margin-bottom: 24px;">Route Overview</h2>
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <h4>Samarkand / Panjakent</h4>
-                    <p>Трансфер, переход границы, старт маршрута в долину реки Шинг (0-20 км).</p>
-                  </div>
-                  <div class="timeline-item">
-                    <h4>Nezhigon to Marguzor (Lakes 1-6)</h4>
-                    <p>Живописный серпантин от Нижнего каскада до самого большого 6-го озера (20-35 км).</p>
-                  </div>
-                  <div class="timeline-item">
-                    <h4>Hazorchashma (Lake 7)</h4>
-                    <p>Подьем на крутой скалистый уступ к последнему озеру (35-37 км).</p>
-                  </div>
-                </div>
-                <div style="margin-top: 32px;">
-                  <a href="seven-lakes-map/index.html" class="btn btn--ghost-dark">Show Map Guides</a>
-                </div>
+                <h3>7 озёр в одном дне</h3>
+                <p>От Нежигона до Хазорчашмы, с остановками там, где действительно хочется задержаться.</p>
               </div>
-              <div style="border-radius: var(--radius-md); overflow: hidden;">
-                <!-- Just a placeholder image to look like a map preview, or an actual map -->
-                <img src="assets/lake-4-1024.jpg" alt="Map Preview" style="aspect-ratio: 1/1; object-fit: cover; width: 100%;" loading="lazy" />
+            </article>
+
+            <article class="highlight-card">
+              <span class="highlight-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="8" width="18" height="8" rx="2"></rect>
+                  <path d="M7 16v3M17 16v3M9 8V5h6v3"></path>
+                </svg>
+              </span>
+              <div>
+                <h3>Комфортный трансфер</h3>
+                <p>Подбираем машину под формат поездки: частный легковой вариант, минивэн или 4x4.</p>
               </div>
-            </div>
+            </article>
+
+            <article class="highlight-card">
+              <span class="highlight-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12h18"></path>
+                  <path d="M12 3v18"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                </svg>
+              </span>
+              <div>
+                <h3>Поддержка на границе</h3>
+                <p>Заранее объясняем логику перехода Самарканд — Пенджикент и остаёмся на связи по дороге.</p>
+              </div>
+            </article>
+
+            <article class="highlight-card">
+              <span class="highlight-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19V5"></path>
+                  <path d="M4 5c4 0 4 2 8 2s4-2 8-2v10c-4 0-4 2-8 2s-4-2-8-2"></path>
+                </svg>
+              </span>
+              <div>
+                <h3>Гибкий темп</h3>
+                <p>Маршрут адаптируется под ваши фото-паузы, детей, сезон и желаемую глубину поездки.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- 7. WHY CHOOSE US -->
-      <section class="section" style="background-color: var(--color-surface);" id="why-us">
-        <div class="container fade-up">
-          <div class="section-header">
-            <h2>Why Choose Us</h2>
-            <p>Премиум качество по локальным ценам.</p>
+      <section class="landing-section" id="destination" aria-labelledby="destination-title">
+        <div class="container destination-layout">
+          <article class="destination-story">
+            <div class="section-head">
+              <p class="section-kicker">О направлении</p>
+              <h2 class="section-title" id="destination-title">Почему туристы выбирают именно Seven Lakes</h2>
+              <p class="section-intro">
+                Seven Lakes — это каскад из семи горных озёр в долине Шинг. Каждое озеро отличается
+                оттенком воды, характером рельефа и ощущением пространства, поэтому маршрут не похож
+                на цепочку одинаковых точек, а воспринимается как полноценное путешествие по Фанским горам.
+              </p>
+            </div>
+
+            <div class="destination-copy">
+              <p>
+                Формат поездки особенно удобен для тех, кто уже находится в Самарканде и хочет увидеть
+                Таджикистан без многодневной логистики. За один день вы проходите границу, поднимаетесь
+                по долине к самым выразительным панорамам и возвращаетесь обратно в том же темпе, который
+                комфортен вашей группе.
+              </p>
+              <p>
+                Мы сохраняем смысл частного тура: прямой контакт, понятная цена, гибкая программа и
+                маршрут, в котором важны не только локации, но и весь опыт поездки.
+              </p>
+            </div>
+          </article>
+
+          <aside class="destination-panel">
+            <figure class="destination-panel__image">
+              <img
+                src="assets/lake-1.jpg"
+                srcset="assets/lake-1-640.jpg 640w, assets/lake-1-1024.jpg 1024w, assets/lake-1.jpg 1400w"
+                sizes="(max-width: 900px) 100vw, 36vw"
+                width="1400"
+                height="1050"
+                loading="lazy"
+                decoding="async"
+                alt="Озеро Нежигон, первое озеро каскада Seven Lakes"
+              />
+              <figcaption>Нежигон открывает каскад Seven Lakes и задаёт визуальный тон всему маршруту.</figcaption>
+            </figure>
+
+            <div class="fact-stack" aria-label="Факты о маршруте">
+              <article class="fact-card">
+                <span class="fact-card__value">7</span>
+                <span class="fact-card__label">озёр в долине Шинг</span>
+              </article>
+              <article class="fact-card">
+                <span class="fact-card__value">1640–2400 м</span>
+                <span class="fact-card__label">высотный диапазон каскада</span>
+              </article>
+              <article class="fact-card">
+                <span class="fact-card__value">май — октябрь</span>
+                <span class="fact-card__label">самый яркий сезон поездки</span>
+              </article>
+              <article class="fact-card">
+                <span class="fact-card__value">RU / EN</span>
+                <span class="fact-card__label">поддержка и коммуникация</span>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="landing-section landing-section--alt" id="tours" aria-labelledby="tours-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Форматы поездок</p>
+            <h2 class="section-title" id="tours-title">Туровые карточки, собранные под реальный travel-intent</h2>
+            <p class="section-intro">
+              Основной продукт сайта — Seven Lakes из Самарканда, но рядом с ним логично работают ещё два
+              частных маршрута для путешественников, которые хотят глубже исследовать Таджикистан.
+            </p>
           </div>
-          <div class="cards-3">
-            <div class="minimal-card fade-up delay-100" style="border: none; box-shadow: none; background: transparent;">
-              <h3 class="text-brand">Local Expertise</h3>
-              <p>Мы сами из Таджикистана. Наши водители знают каждый поворот и историю каждого озера.</p>
-            </div>
-            <div class="minimal-card fade-up delay-200" style="border: none; box-shadow: none; background: transparent;">
-              <h3 class="text-brand">Transparent Pricing</h3>
-              <p>Никаких скрытых платежей. Фиксированная цена без переплат агентам и посредникам.</p>
-            </div>
-            <div class="minimal-card fade-up delay-300" style="border: none; box-shadow: none; background: transparent;">
-              <h3 class="text-brand">Flexible Itineraries</h3>
-              <p>Остановимся там где захотите. Больше времени на фото и адаптация под ваш темп (дети / взрослые).</p>
-            </div>
+
+          <div class="tour-grid">
+            <article class="tour-showcase">
+              <figure class="tour-showcase__media">
+                <img
+                  src="assets/lake-1.jpg"
+                  srcset="assets/lake-1-640.jpg 640w, assets/lake-1-1024.jpg 1024w, assets/lake-1.jpg 1400w"
+                  sizes="(max-width: 800px) 100vw, 33vw"
+                  width="1400"
+                  height="1050"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Тур на 7 озёр Таджикистана из Самарканда"
+                />
+                <span class="tour-showcase__badge">от 240 USD / машина</span>
+              </figure>
+              <div class="tour-showcase__body">
+                <h3>7 озёр Таджикистана, 1 день</h3>
+                <p>Главный маршрут сайта: Seven Lakes, помощь на границе, лучшие фото-точки и возврат в Самарканд.</p>
+                <div class="tour-showcase__meta">
+                  <span class="badge">частный формат</span>
+                  <span class="badge">туда-обратно за день</span>
+                </div>
+                <a class="landing-btn landing-btn--secondary landing-btn--full" href="tours/seven-lakes-from-samarkand/index.html" data-track="tour_card_seven_lakes">Открыть тур</a>
+              </div>
+            </article>
+
+            <article class="tour-showcase">
+              <figure class="tour-showcase__media">
+                <img
+                  src="assets/iskanderkul.jpg"
+                  srcset="assets/iskanderkul-640.jpg 640w, assets/iskanderkul-1024.jpg 1024w, assets/iskanderkul.jpg 1400w"
+                  sizes="(max-width: 800px) 100vw, 33vw"
+                  width="1400"
+                  height="933"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Частный тур на Искандеркуль из Самарканда"
+                />
+                <span class="tour-showcase__badge">от 200 USD / машина</span>
+              </figure>
+              <div class="tour-showcase__body">
+                <h3>Искандеркуль, 1 день</h3>
+                <p>Удобный частный маршрут к одному из самых известных высокогорных озёр Таджикистана.</p>
+                <div class="tour-showcase__meta">
+                  <span class="badge">private transfer</span>
+                  <span class="badge">day trip</span>
+                </div>
+                <a class="landing-btn landing-btn--outline landing-btn--full" href="tours/iskanderkul-from-samarkand/index.html" data-track="tour_card_iskanderkul">Открыть тур</a>
+              </div>
+            </article>
+
+            <article class="tour-showcase">
+              <figure class="tour-showcase__media">
+                <img
+                  src="assets/lake-4.jpg"
+                  srcset="assets/lake-4-640.jpg 640w, assets/lake-4-1024.jpg 1024w, assets/lake-4.jpg 1400w"
+                  sizes="(max-width: 800px) 100vw, 33vw"
+                  width="1400"
+                  height="1050"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Джип-тур по Фанским горам"
+                />
+                <span class="tour-showcase__badge">индивидуально</span>
+              </figure>
+              <div class="tour-showcase__body">
+                <h3>Джип-тур по Фанским горам</h3>
+                <p>Для тех, кому нужен более глубокий mountain-format с видами, перевалами и участками 4x4.</p>
+                <div class="tour-showcase__meta">
+                  <span class="badge">4x4 маршрут</span>
+                  <span class="badge">гибкая программа</span>
+                </div>
+                <a class="landing-btn landing-btn--outline landing-btn--full" href="tours/fann-mountains-jeep-tour/index.html" data-track="tour_card_fann">Открыть тур</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- 8. BOOKING SECTION -->
-      <section class="booking-section" id="booking">
-        <div class="container booking-grid fade-up">
-          
-          <div class="booking-info">
-            <h2>Book Your Tour</h2>
-            <p>Готовы к приключению в Fann Mountains? Отправьте нам запрос, и мы оформим тур в течение 10 минут.</p>
-            
-            <ul class="booking-list">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                Трансфер Самарканд ↔ Seven Lakes
+      <section class="landing-section" id="lakes" aria-labelledby="lakes-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Обзор каскада</p>
+            <h2 class="section-title" id="lakes-title">Семь озёр, каждое со своим характером</h2>
+            <p class="section-intro">
+              Мы сохранили полноценную структуру сайта по каждому озеру отдельно, чтобы турист мог быстро
+              понять, чем отличается каждая точка маршрута и какие виды его ждут по мере набора высоты.
+            </p>
+          </div>
+
+          <div class="lake-overview-grid">
+            <article class="lake-overview-card">
+              <a class="lake-overview-card__link" href="first-lake-seven-lakes/index.html">
+                <figure class="lake-overview-card__media">
+                  <img src="assets/lake-1.jpg" srcset="assets/lake-1-640.jpg 640w, assets/lake-1-1024.jpg 1024w, assets/lake-1.jpg 1400w" sizes="(max-width: 740px) 100vw, (max-width: 1120px) 50vw, 25vw" width="1400" height="1050" loading="lazy" decoding="async" alt="Первое озеро Нежигон" />
+                  <span class="lake-overview-card__tag">Озеро 1</span>
+                </figure>
+                <div class="lake-overview-card__body">
+                  <h3>Нежигон</h3>
+                  <p>Бирюзовое вступление в маршрут и самая мягкая точка входа в каскад.</p>
+                  <span class="lake-overview-card__meta">около 1640 м</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="lake-overview-card">
+              <a class="lake-overview-card__link" href="second-lake-seven-lakes/index.html">
+                <figure class="lake-overview-card__media">
+                  <img src="assets/client-2-768.jpg" srcset="assets/client-2-480.jpg 480w, assets/client-2-768.jpg 768w" sizes="(max-width: 740px) 100vw, (max-width: 1120px) 50vw, 25vw" width="768" height="509" loading="lazy" decoding="async" alt="Второе озеро Соя" />
+                  <span class="lake-overview-card__tag">Озеро 2</span>
+                </figure>
+                <div class="lake-overview-card__body">
+                  <h3>Соя</h3>
+                  <p>Более глубокий цвет воды и ощущение скального амфитеатра.</p>
+                  <span class="lake-overview-card__meta">около 1701 м</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="lake-overview-card">
+              <a class="lake-overview-card__link" href="third-lake-seven-lakes/index.html">
+                <figure class="lake-overview-card__media">
+                  <img src="assets/client-3-768.jpg" srcset="assets/client-3-480.jpg 480w, assets/client-3-768.jpg 768w" sizes="(max-width: 740px) 100vw, (max-width: 1120px) 50vw, 25vw" width="768" height="960" loading="lazy" decoding="async" alt="Третье озеро Хушёр" />
+                  <span class="lake-overview-card__tag">Озеро 3</span>
+                </figure>
+                <div class="lake-overview-card__body">
+                  <h3>Хушёр</h3>
+                  <p>Более суровый mountain-ландшафт и драматичные склоны.</p>
+                  <span class="lake-overview-card__meta">около 1771 м</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="lake-overview-card">
+              <a class="lake-overview-card__link" href="fourth-lake-seven-lakes/index.html">
+                <figure class="lake-overview-card__media">
+                  <img src="assets/lake-4.jpg" srcset="assets/lake-4-640.jpg 640w, assets/lake-4-1024.jpg 1024w, assets/lake-4.jpg 1400w" sizes="(max-width: 740px) 100vw, (max-width: 1120px) 50vw, 25vw" width="1400" height="1050" loading="lazy" decoding="async" alt="Четвёртое озеро Нофин" />
+                  <span class="lake-overview-card__tag">Озеро 4</span>
+                </figure>
+                <div class="lake-overview-card__body">
+                  <h3>Нофин</h3>
+                  <p>Более длинная береговая линия и ощущение настоящего маршрута по долине.</p>
+                  <span class="lake-overview-card__meta">около 1820 м</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="lake-overview-card">
+              <a class="lake-overview-card__link" href="fifth-lake-seven-lakes/index.html">
+                <figure class="lake-overview-card__media">
+                  <img src="assets/client-5-768.jpg" srcset="assets/client-5-480.jpg 480w, assets/client-5-768.jpg 768w" sizes="(max-width: 740px) 100vw, (max-width: 1120px) 50vw, 25vw" width="768" height="1024" loading="lazy" decoding="async" alt="Пятое озеро Хурдак" />
+                  <span class="lake-overview-card__tag">Озеро 5</span>
+                </figure>
+                <div class="lake-overview-card__body">
+                  <h3>Хурдак</h3>
+                  <p>Самое компактное озеро каскада и переход к более высокой части маршрута.</p>
+                  <span class="lake-overview-card__meta">около 1870 м</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="lake-overview-card">
+              <a class="lake-overview-card__link" href="sixth-lake-seven-lakes/index.html">
+                <figure class="lake-overview-card__media">
+                  <img src="assets/client-6-768.jpg" srcset="assets/client-6-480.jpg 480w, assets/client-6-768.jpg 768w" sizes="(max-width: 740px) 100vw, (max-width: 1120px) 50vw, 25vw" width="768" height="1024" loading="lazy" decoding="async" alt="Шестое озеро Маргузор" />
+                  <span class="lake-overview-card__tag">Озеро 6</span>
+                </figure>
+                <div class="lake-overview-card__body">
+                  <h3>Маргузор</h3>
+                  <p>Крупнейшее озеро системы и одна из самых сильных фото-точек всей поездки.</p>
+                  <span class="lake-overview-card__meta">около 2140 м</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="lake-overview-card">
+              <a class="lake-overview-card__link" href="seventh-lake-seven-lakes/index.html">
+                <figure class="lake-overview-card__media">
+                  <img src="assets/client-9-768.jpg" srcset="assets/client-9-480.jpg 480w, assets/client-9-768.jpg 768w" sizes="(max-width: 740px) 100vw, (max-width: 1120px) 50vw, 25vw" width="768" height="1024" loading="lazy" decoding="async" alt="Седьмое озеро Хазорчашма" />
+                  <span class="lake-overview-card__tag">Озеро 7</span>
+                </figure>
+                <div class="lake-overview-card__body">
+                  <h3>Хазорчашма</h3>
+                  <p>Самая высокая и самая спокойная часть каскада с ощущением конца большого пути.</p>
+                  <span class="lake-overview-card__meta">около 2330–2400 м</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-section landing-section--alt" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Реальные фотографии</p>
+            <h2 class="section-title" id="gallery-title">Галерея маршрута без стокового ощущения</h2>
+            <p class="section-intro">
+              Это реальные кадры с поездок по Seven Lakes и Фанским горам. Галерея помогает заранее понять
+              ритм маршрута: дорога, воды разного цвета, каньоны, панорамы и сезонные изменения.
+            </p>
+          </div>
+
+          <div class="gallery" aria-label="Галерея маршрута">
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-1-768.jpg" srcset="assets/client-1-480.jpg 480w, assets/client-1-768.jpg 768w, assets/client-1-1200.jpg 1200w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="512" loading="lazy" decoding="async" alt="Панорама гор и озера на маршруте Seven Lakes" />
+              </div>
+              <figcaption>Панорамный вид на озеро и горный хребет.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-2-768.jpg" srcset="assets/client-2-480.jpg 480w, assets/client-2-768.jpg 768w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="509" loading="lazy" decoding="async" alt="Дорога вдоль бирюзового озера Seven Lakes" />
+              </div>
+              <figcaption>Дорога вдоль береговой линии и бирюзовой воды.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-3-768.jpg" srcset="assets/client-3-480.jpg 480w, assets/client-3-768.jpg 768w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="960" loading="lazy" decoding="async" alt="Горная река на подъёме к озёрам Seven Lakes" />
+              </div>
+              <figcaption>Речная часть долины и переходный участок маршрута.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-4-768.jpg" srcset="assets/client-4-480.jpg 480w, assets/client-4-768.jpg 768w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="1024" loading="lazy" decoding="async" alt="Берег озера и горная дорога в Фанских горах" />
+              </div>
+              <figcaption>Берег, дорога и мягкие остановки на фото.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-5-768.jpg" srcset="assets/client-5-480.jpg 480w, assets/client-5-768.jpg 768w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="1024" loading="lazy" decoding="async" alt="Бирюзовая вода между скалами на Seven Lakes" />
+              </div>
+              <figcaption>Насыщенный цвет воды и узкий каньонный участок.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-6-768.jpg" srcset="assets/client-6-480.jpg 480w, assets/client-6-768.jpg 768w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="1024" loading="lazy" decoding="async" alt="Скальный склон и вид на озеро Маргузор" />
+              </div>
+              <figcaption>Маргузор и виды со склона выше уровня воды.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-7-768.jpg" srcset="assets/client-7-480.jpg 480w, assets/client-7-768.jpg 768w, assets/client-7-1200.jpg 1200w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="1665" loading="lazy" decoding="async" alt="Высокий каньон и горная вода в районе Seven Lakes" />
+              </div>
+              <figcaption>Высокий каньон и вода, питающая долину.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-8-768.jpg" srcset="assets/client-8-480.jpg 480w, assets/client-8-768.jpg 768w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="1663" loading="lazy" decoding="async" alt="Seven Lakes в холодный сезон" />
+              </div>
+              <figcaption>Маршрут в более холодный сезон и другой характер пейзажа.</figcaption>
+            </figure>
+            <figure class="gallery__item">
+              <div class="gallery__media">
+                <img src="assets/client-9-768.jpg" srcset="assets/client-9-480.jpg 480w, assets/client-9-768.jpg 768w" sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw" width="768" height="1024" loading="lazy" decoding="async" alt="Голубое озеро и снежная вершина на Seven Lakes" />
+              </div>
+              <figcaption>Контраст воды, камня и снежной вершины.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-section" id="itinerary" aria-labelledby="itinerary-title">
+        <div class="container itinerary-layout">
+          <article class="itinerary-panel">
+            <div class="section-head">
+              <p class="section-kicker">Tour itinerary</p>
+              <h2 class="section-title" id="itinerary-title">Как выглядит день на маршруте</h2>
+              <p class="section-intro">
+                Здесь важно не просто попасть к точке назначения, а пройти весь путь в понятной и комфортной логике:
+                от выезда из Самарканда до подъёма по каскаду озёр.
+              </p>
+            </div>
+
+            <ol class="itinerary-list">
+              <li class="itinerary-step">
+                <span class="itinerary-step__index">01</span>
+                <div>
+                  <h3>Выезд из Самарканда</h3>
+                  <p>Забор из отеля, согласованный старт и короткий бриф по маршруту перед дорогой.</p>
+                </div>
               </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                Встреча у вашего отеля
+              <li class="itinerary-step">
+                <span class="itinerary-step__index">02</span>
+                <div>
+                  <h3>Переход границы</h3>
+                  <p>Проходите участок Самарканд — Пенджикент по заранее понятной схеме, без хаотичной логистики.</p>
+                </div>
               </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                Внедорожник (4x4) или минивэн
+              <li class="itinerary-step">
+                <span class="itinerary-step__index">03</span>
+                <div>
+                  <h3>Подъём по долине Шинг</h3>
+                  <p>По дороге открываются Нежигон, Соя, Хушёр, Нофин, Хурдак и Маргузор с гибкими фото-стопами.</p>
+                </div>
               </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                Помощь на границе
+              <li class="itinerary-step">
+                <span class="itinerary-step__index">04</span>
+                <div>
+                  <h3>Верхняя точка маршрута</h3>
+                  <p>Финальный акцент поездки — Хазорчашма и ощущение, что вы действительно прошли весь каскад.</p>
+                </div>
               </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                Вода в салоне и безлимитные фото-стопы
-              </li>
+            </ol>
+          </article>
+
+          <aside class="logistics-card">
+            <h3>Что удобно знать заранее</h3>
+            <ul class="logistics-list">
+              <li>Маршрут лучше всего работает в формате частной поездки без жёсткой групповой привязки.</li>
+              <li>Сезон влияет на цвет воды, ритм дороги и длительность комфортных остановок.</li>
+              <li>Для семей и mixed groups мы просто делаем больше пауз и меняем темп на маршруте.</li>
+            </ul>
+            <a class="landing-btn landing-btn--outline landing-btn--full" href="samarkand-to-seven-lakes-tour/index.html" data-track="itinerary_details">Открыть страницу о логистике из Самарканда</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="landing-section landing-section--alt" id="features" aria-labelledby="features-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker">Что входит в опыт</p>
+            <h2 class="section-title" id="features-title">Компоненты маршрута, которые влияют на комфорт</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Забор из отеля</h3>
+              <p>Маршрут начинается без лишних трансферов и поиска точки старта утром.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Прямой контакт</h3>
+              <p>Без посредников: вы переписываетесь напрямую с человеком, который ведёт маршрут.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Помощь на границе</h3>
+              <p>Перед поездкой вы получаете понятный порядок действий, а не размытые советы.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Фото-остановки</h3>
+              <p>Смысл поездки в видах, поэтому паузы на сильных ракурсах не убираются из маршрута.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Гибкий ритм</h3>
+              <p>Остановимся дольше там, где нужен медленный темп, дети или больше времени на фото.</p>
+            </article>
+            <article class="feature-card">
+              <h3>RU / EN support</h3>
+              <p>Подходит как для русскоязычных туристов, так и для международных гостей из Самарканда.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-section" id="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <p class="section-kicker">Отзывы и доверие</p>
+            <h2 class="section-title" id="reviews-title">Почему формат “частный маршрут + понятная логистика” так хорошо работает</h2>
+          </div>
+
+          <div class="trust-strip" aria-label="Факты о сервисе">
+            <span>Частные поездки</span>
+            <span>WhatsApp / Telegram</span>
+            <span>Прозрачная цена до выезда</span>
+            <span>Реальные фото маршрута</span>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <p class="review-card__text">«Организация очень спокойная: вовремя забрали, всё объяснили по границе и не торопили на красивых точках.»</p>
+              <p class="review-card__meta"><strong>Ирина</strong> • Самарканд</p>
+            </article>
+            <article class="review-card">
+              <p class="review-card__text">«Ехали с детьми, и маршрут реально адаптировали под наш темп. В этом и чувствуется частный формат.»</p>
+              <p class="review-card__meta"><strong>Рустам</strong> • Ташкент</p>
+            </article>
+            <article class="review-card">
+              <p class="review-card__text">«Быстрый ответ в WhatsApp, прозрачная стоимость и реальные фото до бронирования. Всё было очень понятно ещё до выезда.»</p>
+              <p class="review-card__meta"><strong>Гульнора</strong> • Душанбе</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-section landing-section--alt" id="booking" aria-labelledby="booking-title">
+        <div class="container booking-layout">
+          <article class="pricing-card">
+            <div class="section-head">
+              <p class="section-kicker">Pricing &amp; booking</p>
+              <h2 class="section-title" id="booking-title">Бронирование без лишних шагов</h2>
+              <p class="section-intro">
+                Напишите дату, размер группы и контакт. Мы отправим точный тайминг, маршрут и расчёт по вашей поездке.
+              </p>
+            </div>
+
+            <div class="pricing-value">
+              <span class="pricing-value__label">Стартовая цена</span>
+              <strong>от 240 USD</strong>
+              <span class="pricing-value__sub">за машину, в зависимости от маршрута и состава группы</span>
+            </div>
+
+            <ul class="included-list">
+              <li>забор из отеля в Самарканде</li>
+              <li>логика перехода на границе Самарканд — Пенджикент</li>
+              <li>маршрут по долине Seven Lakes / Haft Kul</li>
+              <li>гибкие остановки у сильных фото-точек</li>
+              <li>возврат в Самарканд в тот же день</li>
             </ul>
 
-            <div style="margin-top: 40px;">
-              <span style="font-size: 0.9rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.1em; opacity: 0.8;">Start from</span><br/>
-              <span style="font-size: 2.5rem; font-weight: 800; color: #fff;">240 USD</span><span style="font-size: 1.2rem; opacity: 0.8;"> / car</span><br/>
-              <span style="font-size: 0.9rem; opacity: 0.8;">(up to 4 pax = from 60$ / person)</span>
+            <div class="booking-links">
+              <a class="landing-btn landing-btn--whatsapp landing-btn--full" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer" data-track="booking_whatsapp_direct">Написать в WhatsApp</a>
+              <a class="landing-btn landing-btn--outline landing-btn--full" href="https://t.me/sevenlakes7" target="_blank" rel="noopener noreferrer" data-track="booking_telegram_direct">Открыть Telegram</a>
             </div>
-          </div>
+          </article>
 
-          <div class="booking-card">
-            <h3>Send Request</h3>
-            
-            <form>
-              <div class="form-group">
-                <label class="form-label">Дата поездки</label>
-                <input class="form-input" type="text" placeholder="Например, 15 сентября" required />
-              </div>
-              
-              <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                <div>
-                  <label class="form-label">Людей</label>
-                  <input class="form-input" type="number" min="1" placeholder="2" required />
-                </div>
-                <div>
-                  <label class="form-label">Мессенджер</label>
-                  <input class="form-input" type="tel" placeholder="+992..." required />
-                </div>
-              </div>
+          <form class="booking-form" data-booking data-message-title="Заявка: тур на 7 озёр Таджикистана из Самарканда">
+            <div class="booking-form__grid">
+              <label class="field">
+                <span class="field__label">Дата поездки</span>
+                <input name="date" type="text" required autocomplete="off" placeholder="Например, 15 мая" data-msg-label="Дата" />
+              </label>
+              <label class="field">
+                <span class="field__label">Количество гостей</span>
+                <input name="people" type="number" min="1" max="20" required inputmode="numeric" placeholder="2–6" data-msg-label="Количество гостей" />
+              </label>
+              <label class="field field--full">
+                <span class="field__label">Точка забора</span>
+                <input name="pickup" type="text" required placeholder="Самарканд, отель или адрес" data-msg-label="Точка забора" />
+              </label>
+              <label class="field field--full">
+                <span class="field__label">Контакт</span>
+                <input name="contact" type="tel" required autocomplete="tel" placeholder="WhatsApp или телефон" data-msg-label="Контакт" />
+              </label>
+              <label class="field field--full">
+                <span class="field__label">Что важно по поездке</span>
+                <textarea name="note" rows="4" placeholder="Дети, спокойный темп, больше фото-стопов, интерес к верхним озёрам" data-msg-label="Пожелания"></textarea>
+              </label>
+            </div>
 
-              <div class="form-actions">
-                <button class="btn btn--whatsapp" type="button" onclick="window.open('https://wa.me/992552225544', '_blank')">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
-                  </svg>
-                  Book via WhatsApp
-                </button>
-                <button class="btn btn--telegram" type="button" onclick="window.open('https://t.me/sevenlakes7', '_blank')">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.611.295-.089 0-.175-.018-.254-.05l-.338-3.374 6.147-5.55c.268-.24-.058-.372-.416-.134l-7.595 4.777-3.268-1.024c-.711-.22-.725-.712.15-1.054l12.764-4.918c.591-.219 1.115.138.921 1.06z"/>
-                  </svg>
-                  Book via Telegram
-                </button>
-              </div>
+            <div class="booking-form__actions">
+              <button class="landing-btn landing-btn--primary landing-btn--full" type="button" data-send="whatsapp" data-track="form_whatsapp">Отправить заявку в WhatsApp</button>
+              <button class="landing-btn landing-btn--outline landing-btn--full" type="button" data-send="telegram" data-track="form_telegram">Отправить заявку в Telegram</button>
+            </div>
 
-              <div class="fineprint">
-                Бронируя напрямую, вы получаете гарантию выделенной машины и гибкие условия отмены.
-              </div>
-            </form>
-          </div>
-
+            <p class="booking-form__note">Для Telegram текст заявки копируется автоматически перед открытием чата.</p>
+          </form>
         </div>
       </section>
 
+      <section class="landing-section" id="map" aria-labelledby="map-title">
+        <div class="container map-layout-premium">
+          <article class="map-story">
+            <div class="section-head">
+              <p class="section-kicker">Map location</p>
+              <h2 class="section-title" id="map-title">Где находится маршрут и как он собирается в одну поездку</h2>
+              <p class="section-intro">
+                Географически маршрут соединяет Самарканд, погранпереход в районе Пенджикента и долину Шинг,
+                где находится каскад Seven Lakes. Именно поэтому сайт строится вокруг travel-intent
+                “из Самарканда в Seven Lakes”.
+              </p>
+            </div>
+
+            <div class="route-points">
+              <div class="route-points__item">
+                <span>01</span>
+                <div>
+                  <strong>Самарканд</strong>
+                  <p>Старт из города, где уже живёт большая часть поискового спроса по маршруту.</p>
+                </div>
+              </div>
+              <div class="route-points__item">
+                <span>02</span>
+                <div>
+                  <strong>Джартепа / Саразм</strong>
+                  <p>Основной логистический переход между Узбекистаном и Таджикистаном.</p>
+                </div>
+              </div>
+              <div class="route-points__item">
+                <span>03</span>
+                <div>
+                  <strong>Пенджикент и долина Шинг</strong>
+                  <p>Дальше маршрут уходит в сторону каскада Seven Lakes и верхних озёр.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="map-visual-card">
+            <figure class="map-visual-card__image">
+              <img
+                src="assets/lake-4.jpg"
+                srcset="assets/lake-4-640.jpg 640w, assets/lake-4-1024.jpg 1024w, assets/lake-4.jpg 1400w"
+                sizes="(max-width: 900px) 100vw, 40vw"
+                width="1400"
+                height="1050"
+                loading="lazy"
+                decoding="async"
+                alt="Вид на долину Seven Lakes и Фанские горы"
+              />
+              <figcaption>Долина Seven Lakes находится в системе Фанских гор, в направлении Пенджикента.</figcaption>
+            </figure>
+            <a class="landing-btn landing-btn--secondary landing-btn--full" href="https://www.google.com/maps/dir/?api=1&amp;origin=Samarkand&amp;destination=Seven+Lakes+Tajikistan&amp;travelmode=driving" target="_blank" rel="noopener noreferrer" data-track="map_google">Открыть маршрут в Google Maps</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="landing-section landing-section--alt" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <p class="section-kicker">FAQ</p>
+            <h2 class="section-title" id="faq-title">Частые вопросы перед бронированием</h2>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-card" open>
+              <summary>Подходит ли поездка для семьи, пары или небольшой компании?</summary>
+              <p>Да. Частный формат как раз удобен тем, что маршрут подстраивается под темп группы и её ожидания.</p>
+            </details>
+            <details class="faq-card">
+              <summary>Цена 240 USD указана за машину или за человека?</summary>
+              <p>Это стартовая цена за машину. Точную стоимость мы отправляем после вашего запроса по дате и составу группы.</p>
+            </details>
+            <details class="faq-card">
+              <summary>Можно ли ехать без многодневной подготовки?</summary>
+              <p>Да. Для большинства туристов это именно удобный day-trip из Самарканда без тяжёлой самостоятельной логистики.</p>
+            </details>
+            <details class="faq-card">
+              <summary>Что лучше взять с собой?</summary>
+              <p>Паспорт, удобную обувь, ветровку, воду, солнцезащиту и power bank. Перед выездом мы отправляем короткий checklist.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-cta" aria-labelledby="cta-title">
+        <div class="container landing-cta__inner">
+          <div>
+            <p class="section-kicker section-kicker--light">Готовы поехать</p>
+            <h2 class="cta-title" id="cta-title">Напишите дату и размер группы, а остальное мы соберём в понятный маршрут</h2>
+            <p class="landing-cta__lead">Самый быстрый путь к бронированию — короткое сообщение в WhatsApp или Telegram.</p>
+          </div>
+
+          <div class="landing-cta__actions">
+            <a class="landing-btn landing-btn--primary" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer" data-track="cta_whatsapp">Написать в WhatsApp</a>
+            <a class="landing-btn landing-btn--light" href="https://t.me/sevenlakes7" target="_blank" rel="noopener noreferrer" data-track="cta_telegram">Открыть Telegram</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="app-footer">
-      <div class="container footer-grid">
-        
-        <div class="footer-col" style="grid-column: span 2;">
-          <a class="brand" href="index.html" style="color: var(--color-dark); margin-bottom: 24px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-brand);">
-              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
-              <path d="M12 12v9"></path>
-              <path d="m8 17 4 4 4-4"></path>
-            </svg>
-            Seven Lakes
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="site-brand site-brand--footer" href="index.html" aria-label="Seven Lakes Tajikistan">
+            <span class="site-brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                <path d="M12 12v9"></path>
+                <path d="m8 17 4 4 4-4"></path>
+              </svg>
+            </span>
+            <span>
+              <strong>Seven Lakes</strong>
+              <small>Premium private routes from Samarkand</small>
+            </span>
           </a>
-          <p class="text-muted" style="max-width: 300px;">
-            The ultimate Tajikistan travel guide and private tours for Haft Kul and the Fann Mountains.
+          <p>
+            Частные маршруты по Seven Lakes, Искандеркулю и Фанским горам с фокусом на
+            ясную логистику, визуальный опыт и комфорт для туриста.
           </p>
         </div>
 
-        <div class="footer-col">
-          <h4>Destinations</h4>
+        <div>
+          <h3>Основные страницы</h3>
           <ul class="footer-links">
-            <li><a href="fann-mountains-tour/index.html">Fann Mountains</a></li>
-            <li><a href="seven-lakes-travel-guide/index.html">Seven Lakes (Haft Kul)</a></li>
-            <li><a href="samarkand-to-seven-lakes-tour/index.html">From Samarkand</a></li>
+            <li><a href="tours/seven-lakes-from-samarkand/index.html">Тур на 7 озёр</a></li>
+            <li><a href="seven-lakes-tajikistan/index.html">Гид по Seven Lakes</a></li>
+            <li><a href="samarkand-to-seven-lakes-tour/index.html">Логистика из Самарканда</a></li>
+            <li><a href="blog/index.html">Статьи и путеводитель</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Resources</h4>
+        <div>
+          <h3>Озёра и материалы</h3>
           <ul class="footer-links">
-            <li><a href="seven-lakes-map/index.html">Map & Route</a></li>
-            <li><a href="how-to-get-to-seven-lakes/index.html">How to Get There</a></li>
-            <li><a href="best-time-to-visit-seven-lakes/index.html">Best Time to Visit</a></li>
-            <li><a href="blog/how-to-get-from-samarkand-to-seven-lakes/index.html">Border Crossing Info</a></li>
+            <li><a href="first-lake-seven-lakes/index.html">Нежигон</a></li>
+            <li><a href="sixth-lake-seven-lakes/index.html">Маргузор</a></li>
+            <li><a href="seventh-lake-seven-lakes/index.html">Хазорчашма</a></li>
+            <li><a href="best-time-to-visit-seven-lakes/index.html">Когда лучше ехать</a></li>
           </ul>
         </div>
 
+        <div>
+          <h3>Контакты</h3>
+          <ul class="footer-links footer-links--contacts">
+            <li><a href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer">WhatsApp: +992 55 222 5544</a></li>
+            <li><a href="https://t.me/sevenlakes7" target="_blank" rel="noopener noreferrer">Telegram: @sevenlakes7</a></li>
+            <li><a href="mailto:firdavs.jalolov@yandex.ru">firdavs.jalolov@yandex.ru</a></li>
+            <li><a href="en/index.html" hreflang="en" lang="en">English version</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="container footer-bottom">
-        <div>&copy; <span data-year>2026</span> Seven Lakes Tajikistan. All rights reserved.</div>
-        <div style="display: flex; gap: 16px;">
-          <a class="text-muted" href="#">Privacy</a>
-          <a class="text-muted" href="#">Terms</a>
-        </div>
+      <div class="container site-footer__bottom">
+        <span>&copy; <span data-year>2026</span> Seven Lakes Tajikistan</span>
+        <span>Частные туры и travel guide по Haft Kul и Фанским горам</span>
       </div>
     </footer>
-    
-    <script src="assets/js/site.js?v=20260311-v2" defer></script>
+
+    <div class="mobilebar" aria-label="Быстрые действия">
+      <a class="mobilebar__btn mobilebar__btn--book" href="#booking" data-track="mobile_booking">Бронировать</a>
+      <a class="mobilebar__btn mobilebar__btn--wa" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer" data-track="mobile_whatsapp">WhatsApp</a>
+    </div>
+
+    <script src="assets/js/site.js?v=20260311-v3" defer></script>
   </body>
 </html>
