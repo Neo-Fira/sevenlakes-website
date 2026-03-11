@@ -34,10 +34,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
     />
-    <link rel="preload" href="../../styles.css?v=20260228" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="../../styles.css?v=20260228" /></noscript>
+    <link rel="preload" href="../../styles.css?v=20260311-v2" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="../../styles.css?v=20260311-v2" /></noscript>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -137,31 +137,19 @@
   </head>
   <body data-locale="en" data-whatsapp="992552225544" data-telegram="sevenlakes7" data-ga4="G-L0G3GKRERE" data-ym="106996654">
     <a class="skip-link" href="#content">Skip to content</a>
-    <header class="site-header">
-      <div class="container site-header__bar">
-        <div class="site-header__start">
-          <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-controls="main-menu" aria-expanded="false">
-            <span class="menu-toggle__line" aria-hidden="true"></span>
-          </button>
-          <a class="brand" href="../../index.html" aria-label="Seven Lakes Tajikistan">
-            <span class="brand__mark" aria-hidden="true">7</span>
-            <span class="brand__text">
-              <span class="brand__title">Seven Lakes</span>
-              <span class="brand__subtitle">Haft Kul • Tajikistan</span>
-            </span>
-          </a>
-        </div>
-
-        <nav class="site-nav" id="main-menu" data-menu aria-label="Page navigation">
-          <ul class="site-nav__list">
-            <li><a href="#overview">Overview</a></li><li><a href="#tips">Tips</a></li><li><a href="#related">Continue route</a></li>
-          </ul>
-        </nav>
-
-        <div class="header-actions">
-          <a class="lang-switch" href="../../first-lake-seven-lakes/index.html" hreflang="ru" lang="ru">RU</a>
-          <a class="btn btn--primary btn--sm" href="../../en/tours/seven-lakes-from-samarkand/index.html">Tour</a>
-          <a class="btn btn--ghost btn--sm" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <header class="app-header">
+      <div class="container app-header__inner">
+        <a class="brand" href="../../index.html" aria-label="Seven Lakes Tajikistan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+            <path d="M12 12v9"></path>
+            <path d="m8 17 4 4 4-4"></path>
+          </svg>
+          Seven Lakes
+        </a>
+        <div style="display: flex; gap: 16px; align-items: center;">
+          <a href="../../first-lake-seven-lakes/index.html" hreflang="ru" lang="ru" style="color: #fff; font-weight: 600; font-size: 0.95rem;">RU</a>
+          <a class="btn btn--ghost" href="../../en/tours/seven-lakes-from-samarkand/index.html">Tour</a>
         </div>
       </div>
     </header>
@@ -304,58 +292,52 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <div class="container site-footer__grid">
-        <div>
-          <a class="brand" href="../../index.html">
-            <span class="brand__mark" aria-hidden="true">7</span>
-            <span class="brand__text">
-              <span class="brand__title">Seven Lakes</span>
-              <span class="brand__subtitle">Haft Kul • Tajikistan</span>
-            </span>
+    <footer class="app-footer">
+      <div class="container footer-grid">
+        <div class="footer-col" style="grid-column: span 2;">
+          <a class="brand" href="../../index.html" style="color: var(--color-dark); margin-bottom: 24px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-brand);">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+              <path d="M12 12v9"></path>
+              <path d="m8 17 4 4 4-4"></path>
+            </svg>
+            Seven Lakes
           </a>
-          <p class="muted">Private tours, travel guides and practical articles about Seven Lakes, Haft Kul and the Fann Mountains.</p>
+          <p class="text-muted" style="max-width: 300px;">
+            The ultimate Tajikistan travel guide and private tours for Haft Kul and the Fann Mountains.
+          </p>
         </div>
-        <div>
-          <h3 class="site-footer__title">Guides</h3>
-          <div class="site-footer__links">
-            <a href="../../en/seven-lakes-tajikistan/index.html">Seven Lakes Tajikistan</a>
-            <a href="../../en/haft-kul-tour/index.html">Haft Kul tour</a>
-            <a href="../../en/samarkand-to-seven-lakes-tour/index.html">Samarkand to Seven Lakes tour</a>
-            <a href="../../en/fann-mountains-tour/index.html">Fann Mountains tour</a>
-          </div>
+
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="../../en/fann-mountains-tour/index.html">Fann Mountains tour</a></li>
+            <li><a href="../../en/seven-lakes-tajikistan/index.html">Seven Lakes (Haft Kul)</a></li>
+            <li><a href="../../en/samarkand-to-seven-lakes-tour/index.html">From Samarkand</a></li>
+            <li><a href="../../en/tours/seven-lakes-from-samarkand/index.html">Seven Lakes tour</a></li>
+          </ul>
         </div>
-        <div>
-          <h3 class="site-footer__title">Lakes & blog</h3>
-          <div class="site-footer__links">
-            <a href="../../en/first-lake-seven-lakes/index.html">First lake</a>
-            <a href="../../en/sixth-lake-seven-lakes/index.html">Marguzor</a>
-            <a href="../../en/seventh-lake-seven-lakes/index.html">Hazorchashma</a>
-            <a href="../../en/blog/index.html">Travel articles</a>
-          </div>
-        </div>
-        <div>
-          <h3 class="site-footer__title">Tours</h3>
-          <div class="site-footer__links">
-            <a href="../../en/tours/seven-lakes-from-samarkand/index.html">Seven Lakes tour</a>
-            <a href="../../en/tours/iskanderkul-from-samarkand/index.html">Iskanderkul</a>
-            <a href="../../en/tours/fann-mountains-jeep-tour/index.html">Fann Mountains jeep tour</a>
-            <a href="../../first-lake-seven-lakes/index.html">Russian version</a>
-            <a href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer">+992 55 222 5544</a>
-          </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="../../en/first-lake-seven-lakes/index.html">First lake</a></li>
+            <li><a href="../../en/sixth-lake-seven-lakes/index.html">Marguzor</a></li>
+            <li><a href="../../en/seventh-lake-seven-lakes/index.html">Hazorchashma</a></li>
+            <li><a href="../../first-lake-seven-lakes/index.html">Russian version</a></li>
+            <li><a href="../../en/blog/index.html">Travel articles</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="container site-footer__bottom">
-        <span>© <span data-year></span> Seven Lakes Tajikistan</span>
-        <span>Seven Lakes • Haft Kul • Fann Mountains</span>
+      <div class="container footer-bottom">
+        <div>&copy; <span data-year>2026</span> Seven Lakes Tajikistan. All rights reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <a class="text-muted" href="https://wa.me/992552225544" target="_blank">+992 55 222 5544</a>
+          <a class="text-muted" href="https://t.me/sevenlakes7" target="_blank">Telegram</a>
+        </div>
       </div>
     </footer>
-
-    <div class="mobilebar" aria-label="Quick actions">
-      <a class="mobilebar__btn mobilebar__btn--book" href="../../en/tours/seven-lakes-from-samarkand/index.html">Tour</a>
-      <a class="mobilebar__btn mobilebar__btn--wa" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-    </div>
-    <script src="../../assets/js/site.js?v=20260228" defer></script>
+    <script src="../../assets/js/site.js?v=20260311-v2" defer></script>
   </body>
 </html>

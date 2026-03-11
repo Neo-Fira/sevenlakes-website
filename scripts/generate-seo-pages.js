@@ -3884,36 +3884,22 @@ function renderLinkList(slug, links) {
 
 function renderHeader(slug, navItems, ctaSlug) {
   const locale = localeOfSlug(slug);
-  const menuLabel = locale === "en" ? "Open menu" : "Открыть меню";
-  const navLabel = locale === "en" ? "Page navigation" : "Навигация по странице";
   const ctaLabel = locale === "en" ? "Tour" : "Тур";
   const langLabel = locale === "en" ? "RU" : "EN";
   const lang = locale === "en" ? "ru" : "en";
-  return `    <header class="site-header">
-      <div class="container site-header__bar">
-        <div class="site-header__start">
-          <button class="menu-toggle" type="button" data-menu-toggle aria-label="${menuLabel}" aria-controls="main-menu" aria-expanded="false">
-            <span class="menu-toggle__line" aria-hidden="true"></span>
-          </button>
-          <a class="brand" href="${hrefFrom(slug, "")}" aria-label="Seven Lakes Tajikistan">
-            <span class="brand__mark" aria-hidden="true">7</span>
-            <span class="brand__text">
-              <span class="brand__title">Seven Lakes</span>
-              <span class="brand__subtitle">Haft Kul • Tajikistan</span>
-            </span>
-          </a>
-        </div>
-
-        <nav class="site-nav" id="main-menu" data-menu aria-label="${navLabel}">
-          <ul class="site-nav__list">
-            ${navItems.map((item) => `<li><a href="#${item.id}">${escapeHtml(item.label)}</a></li>`).join("")}
-          </ul>
-        </nav>
-
-        <div class="header-actions">
-          <a class="lang-switch" href="${hrefFrom(slug, alternateSlug(slug))}" hreflang="${lang}" lang="${lang}">${langLabel}</a>
-          <a class="btn btn--primary btn--sm" href="${hrefFrom(slug, ctaSlug)}">${ctaLabel}</a>
-          <a class="btn btn--ghost btn--sm" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  return `    <header class="app-header">
+      <div class="container app-header__inner">
+        <a class="brand" href="${hrefFrom(slug, "")}" aria-label="Seven Lakes Tajikistan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+            <path d="M12 12v9"></path>
+            <path d="m8 17 4 4 4-4"></path>
+          </svg>
+          Seven Lakes
+        </a>
+        <div style="display: flex; gap: 16px; align-items: center;">
+          <a href="${hrefFrom(slug, alternateSlug(slug))}" hreflang="${lang}" lang="${lang}" style="color: #fff; font-weight: 600; font-size: 0.95rem;">${langLabel}</a>
+          <a class="btn btn--ghost" href="${hrefFrom(slug, ctaSlug)}">${ctaLabel}</a>
         </div>
       </div>
     </header>`;
@@ -3922,73 +3908,64 @@ function renderHeader(slug, navItems, ctaSlug) {
 function renderFooter(slug) {
   const locale = localeOfSlug(slug);
   const ql = localeQuickLinks(slug);
-  const guideTitle = locale === "en" ? "Guides" : "Путеводитель";
-  const lakesTitle = locale === "en" ? "Lakes & blog" : "Озёра и блог";
-  const toursTitle = locale === "en" ? "Tours" : "Маршруты";
+  const guideTitle = locale === "en" ? "Destinations" : "Направления";
+  const resourcesTitle = locale === "en" ? "Resources" : "Материалы";
   const muted = locale === "en"
-    ? "Private tours, travel guides and practical articles about Seven Lakes, Haft Kul and the Fann Mountains."
+    ? "The ultimate Tajikistan travel guide and private tours for Haft Kul and the Fann Mountains."
     : "Частные туры, путеводители и полезные статьи о Seven Lakes, Haft Kul и Фанских горах.";
   const firstLakeLabel = locale === "en" ? "First lake" : "Первое озеро";
   const sixthLakeLabel = locale === "en" ? "Marguzor" : "Маргузор";
   const seventhLakeLabel = locale === "en" ? "Hazorchashma" : "Хазорчашма";
   const blogLabel = locale === "en" ? "Travel articles" : "Статьи о маршруте";
   const mainTourLabel = locale === "en" ? "Seven Lakes tour" : "Тур на 7 озёр";
-  const iskanderkulLabel = locale === "en" ? "Iskanderkul" : "Искандеркуль";
-  const fannLabel = locale === "en" ? "Fann Mountains jeep tour" : "Джип-тур по Фанским горам";
-  const mobileLabel = locale === "en" ? "Quick actions" : "Быстрые действия";
-  const mobileTourLabel = locale === "en" ? "Tour" : "Тур";
-  return `    <footer class="site-footer">
-      <div class="container site-footer__grid">
-        <div>
-          <a class="brand" href="${hrefFrom(slug, "")}">
-            <span class="brand__mark" aria-hidden="true">7</span>
-            <span class="brand__text">
-              <span class="brand__title">Seven Lakes</span>
-              <span class="brand__subtitle">Haft Kul • Tajikistan</span>
-            </span>
+  const fannLabel = locale === "en" ? "Fann Mountains tour" : "Джип-тур по Фанским горам";
+
+  return `    <footer class="app-footer">
+      <div class="container footer-grid">
+        <div class="footer-col" style="grid-column: span 2;">
+          <a class="brand" href="${hrefFrom(slug, "")}" style="color: var(--color-dark); margin-bottom: 24px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-brand);">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+              <path d="M12 12v9"></path>
+              <path d="m8 17 4 4 4-4"></path>
+            </svg>
+            Seven Lakes
           </a>
-          <p class="muted">${muted}</p>
+          <p class="text-muted" style="max-width: 300px;">
+            ${muted}
+          </p>
         </div>
-        <div>
-          <h3 class="site-footer__title">${guideTitle}</h3>
-          <div class="site-footer__links">
-            <a href="${hrefFrom(slug, ql.destination)}">Seven Lakes Tajikistan</a>
-            <a href="${hrefFrom(slug, ql.haftKul)}">Haft Kul tour</a>
-            <a href="${hrefFrom(slug, ql.samarkandTour)}">Samarkand to Seven Lakes tour</a>
-            <a href="${hrefFrom(slug, ql.fannGuide)}">Fann Mountains tour</a>
-          </div>
+
+        <div class="footer-col">
+          <h4>${guideTitle}</h4>
+          <ul class="footer-links">
+            <li><a href="${hrefFrom(slug, ql.fannGuide)}">${fannLabel}</a></li>
+            <li><a href="${hrefFrom(slug, ql.destination)}">Seven Lakes (Haft Kul)</a></li>
+            <li><a href="${hrefFrom(slug, ql.samarkandTour)}">From Samarkand</a></li>
+            <li><a href="${hrefFrom(slug, ql.mainTour)}">${mainTourLabel}</a></li>
+          </ul>
         </div>
-        <div>
-          <h3 class="site-footer__title">${lakesTitle}</h3>
-          <div class="site-footer__links">
-            <a href="${hrefFrom(slug, localizedSlug("first-lake-seven-lakes", locale))}">${firstLakeLabel}</a>
-            <a href="${hrefFrom(slug, localizedSlug("sixth-lake-seven-lakes", locale))}">${sixthLakeLabel}</a>
-            <a href="${hrefFrom(slug, localizedSlug("seventh-lake-seven-lakes", locale))}">${seventhLakeLabel}</a>
-            <a href="${hrefFrom(slug, ql.blog)}">${blogLabel}</a>
-          </div>
-        </div>
-        <div>
-          <h3 class="site-footer__title">${toursTitle}</h3>
-          <div class="site-footer__links">
-            <a href="${hrefFrom(slug, ql.mainTour)}">${mainTourLabel}</a>
-            <a href="${hrefFrom(slug, ql.iskanderkulTour)}">${iskanderkulLabel}</a>
-            <a href="${hrefFrom(slug, ql.fannTour)}">${fannLabel}</a>
-            <a href="${hrefFrom(slug, alternateSlug(slug))}">${locale === "en" ? "Russian version" : "English version"}</a>
-            <a href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer">+992 55 222 5544</a>
-          </div>
+
+        <div class="footer-col">
+          <h4>${resourcesTitle}</h4>
+          <ul class="footer-links">
+            <li><a href="${hrefFrom(slug, localizedSlug("first-lake-seven-lakes", locale))}">${firstLakeLabel}</a></li>
+            <li><a href="${hrefFrom(slug, localizedSlug("sixth-lake-seven-lakes", locale))}">${sixthLakeLabel}</a></li>
+            <li><a href="${hrefFrom(slug, localizedSlug("seventh-lake-seven-lakes", locale))}">${seventhLakeLabel}</a></li>
+            <li><a href="${hrefFrom(slug, alternateSlug(slug))}">${locale === "en" ? "Russian version" : "English version"}</a></li>
+            <li><a href="${hrefFrom(slug, ql.blog)}">${blogLabel}</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="container site-footer__bottom">
-        <span>© <span data-year></span> Seven Lakes Tajikistan</span>
-        <span>Seven Lakes • Haft Kul • Fann Mountains</span>
+      <div class="container footer-bottom">
+        <div>&copy; <span data-year>2026</span> Seven Lakes Tajikistan. All rights reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <a class="text-muted" href="https://wa.me/992552225544" target="_blank">+992 55 222 5544</a>
+          <a class="text-muted" href="https://t.me/sevenlakes7" target="_blank">Telegram</a>
+        </div>
       </div>
-    </footer>
-
-    <div class="mobilebar" aria-label="${mobileLabel}">
-      <a class="mobilebar__btn mobilebar__btn--book" href="${hrefFrom(slug, ql.mainTour)}">${mobileTourLabel}</a>
-      <a class="mobilebar__btn mobilebar__btn--wa" href="https://wa.me/992552225544" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-    </div>`;
+    </footer>`;
 }
 
 function renderFaqBlock(faq, locale = "ru") {
@@ -4170,11 +4147,11 @@ function renderGuidePage(page) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
     />
     ${renderPreloadImage(slug, page.image)}
-    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260228")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260228")}" /></noscript>
+    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" /></noscript>
     <script type="application/ld+json">
 ${jsonLd({ "@context": "https://schema.org", "@graph": graph })}
     </script>
@@ -4277,7 +4254,7 @@ ${renderHeader(slug, navItems, ql.mainTour)}
       </section>
     </main>
 ${renderFooter(slug)}
-    <script src="${assetFrom(slug, "assets/js/site.js?v=20260228")}" defer></script>
+    <script src="${assetFrom(slug, "assets/js/site.js?v=20260311-v2")}" defer></script>
   </body>
 </html>`;
 }
@@ -4364,10 +4341,10 @@ function renderLakePage(lake, index, collection = lakePages) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
     />
-    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260228")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260228")}" /></noscript>
+    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" /></noscript>
     <script type="application/ld+json">
 ${jsonLd({ "@context": "https://schema.org", "@graph": graph })}
     </script>
@@ -4497,7 +4474,7 @@ ${renderHeader(slug, navItems, ql.mainTour)}
       </section>
     </main>
 ${renderFooter(slug)}
-    <script src="${assetFrom(slug, "assets/js/site.js?v=20260228")}" defer></script>
+    <script src="${assetFrom(slug, "assets/js/site.js?v=20260311-v2")}" defer></script>
   </body>
 </html>`;
 }
@@ -4549,10 +4526,10 @@ function renderBlogIndex(slug = "blog", items = articleIndexCards) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
     />
-    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260228")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260228")}" /></noscript>
+    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" /></noscript>
     <script type="application/ld+json">
 ${jsonLd({ "@context": "https://schema.org", "@graph": graph })}
     </script>
@@ -4616,7 +4593,7 @@ ${renderHeader(slug, [{ id: "articles", label: isEn ? "Articles" : "Статьи
       </section>
     </main>
 ${renderFooter(slug)}
-    <script src="${assetFrom(slug, "assets/js/site.js?v=20260228")}" defer></script>
+    <script src="${assetFrom(slug, "assets/js/site.js?v=20260311-v2")}" defer></script>
   </body>
 </html>`;
 }
@@ -4688,10 +4665,10 @@ function renderBlogPost(post) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
     />
-    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260228")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260228")}" /></noscript>
+    <link rel="preload" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="${assetFrom(slug, "styles.css?v=20260311-v2")}" /></noscript>
     <script type="application/ld+json">
 ${jsonLd({ "@context": "https://schema.org", "@graph": graph })}
     </script>
@@ -4796,7 +4773,7 @@ ${renderHeader(slug, navItems, ql.mainTour)}
       </section>
     </main>
 ${renderFooter(slug)}
-    <script src="${assetFrom(slug, "assets/js/site.js?v=20260228")}" defer></script>
+    <script src="${assetFrom(slug, "assets/js/site.js?v=20260311-v2")}" defer></script>
   </body>
 </html>`;
 }
