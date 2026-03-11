@@ -561,7 +561,7 @@ const landingPages = [
       "Страница под коммерческий спрос по запросу Haft Kul tour. Здесь важно быстро объяснить маршрут, формат поездки, логику цены и чем private tour отличается от общей обзорной информации о destination.",
     image: "assets/lake-1.jpg",
     imageAlt: "Haft Kul в Таджикистане с бирюзовой водой и горными склонами",
-    pills: ["от 180 USD / машина", "индивидуальный формат", "граница + логистика", "подходит для day trip"],
+    pills: ["от 240 USD / машина", "индивидуальный формат", "граница + логистика", "подходит для day trip"],
     facts: [
       "Старт: Самарканд",
       "Направление: Seven Lakes / Haft Kul",
@@ -1091,7 +1091,7 @@ applyOverrides(landingPages, {
     kicker: "Индивидуальный тур • Haft Kul",
     lead:
       "Haft Kul tour — один из самых удобных способов увидеть Seven Lakes Tajikistan из Самарканда за один день. На этой странице собрана практическая информация о маршруте, формате поездки, времени в пути и подготовке к выезду.",
-    pills: ["от 180 USD / машина", "выезд из Самарканда", "граница и логистика", "Seven Lakes за 1 день"],
+    pills: ["от 240 USD / машина", "выезд из Самарканда", "граница и логистика", "Seven Lakes за 1 день"],
     facts: [
       "Старт: Самарканд",
       "Формат: частный тур на машине",
@@ -2703,7 +2703,7 @@ applyOverrides(landingPagesEn, {
     kicker: "Private tour • Haft Kul",
     lead:
       "Haft Kul tour is one of the easiest ways to see Seven Lakes Tajikistan from Samarkand in a single day. This page explains the route, the pace of the trip, border logistics and what to prepare before departure.",
-    pills: ["from 180 USD / car", "Samarkand departure", "border support", "Seven Lakes in one day"],
+    pills: ["from 240 USD / car", "Samarkand departure", "border support", "Seven Lakes in one day"],
     facts: [
       "Departure: Samarkand",
       "Format: private car tour",
@@ -4095,7 +4095,7 @@ function renderGuidePage(page) {
       offers: {
         "@type": "Offer",
         priceCurrency: "USD",
-        price: "180",
+        price: "240",
         availability: "https://schema.org/InStock",
         url: canonical(ql.mainTour)
       }
