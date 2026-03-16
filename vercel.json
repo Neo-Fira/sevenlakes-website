@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "outputDirectory": "out",
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    }
+  ]
+}
